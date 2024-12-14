@@ -1,17 +1,9 @@
-///this this sameple code
-To
-provide
-you
-with code without errors, I'll address the issues mentioned earlier and refactor the code for better structure and functionality. Here's the updated code:
-
-```python
 import tkinter as tk
 from tkinter import filedialog
 from PIL import Image, ImageTk
 import tensorflow as tf
 import numpy as np
 
-# Load the pre-trained model
 new_model_path = "C:\\Users\\yelma\\OneDrive\\Desktop\\new project\\bestmodel3"
 loaded_model = tf.keras.models.load_model(new_model_path)
 
@@ -21,7 +13,6 @@ class App:
         self.master = master
         master.title("Welcome Screen")
 
-        # Maximize the window
         width, height = master.winfo_screenwidth(), master.winfo_screenheight()
         master.geometry(f"{width}x{height}")
 
@@ -444,20 +435,3 @@ class SelectImageScreen:
         root.mainloop()
 
 
-# Run the main application
-root = tk.Tk()
-app = App(root)
-root.mainloop()
-```
-
-This
-code
-should
-run
-without
-errors.Let
-me
-know if you
-need
-further
-assistance!
